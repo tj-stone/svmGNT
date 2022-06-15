@@ -10,7 +10,7 @@ R code for pre-processing of Illumina methylation array data, consensus clusteri
 # Overview
 The workflow script `svmGNT.R` contains the step-by-step commands used to read in and pre-process Illumina 450K/EPIC methylation array data, in addition to subsequent consensus clustering analysis, t-SNE plotting, and construction of a simple support vector machine classification model. 
 
-`850K_remove_probes.txt` is provided to document probes removed following pre-processing. These are derived from Pidsley et al (2016) and correspond to probes within 50bp of an SNP, probes with at least 1 cross reactive target, and probes with a MAF >5%.
+`850Kremove_probes.txt` is provided to document probes removed following pre-processing. These are derived from Pidsley et al (2016) and correspond to probes within 50bp of an SNP, probes with at least 1 cross reactive target, and probes with a MAF >5%.
 
 # System Requirements
 ## Hardware Requirements
