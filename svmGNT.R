@@ -10,8 +10,8 @@ library(MLmetrics)
 #Read in raw training (450k) and test (EPIC) data and combine into one array
 baseDir <- getwd()
 targets <- read.metharray.sheet(baseDir, pattern = "SVMGNT_cohort.csv")
-RGSetTraining <- read.metharray.exp(targets=targets[1:42,], force = TRUE)
-RGSetTest <- read.metharray.exp(targets=targets[43:76,], force = TRUE)
+RGSetTraining <- read.metharray.exp(targets = targets[1:42,], force = TRUE)
+RGSetTest <- read.metharray.exp(targets = targets[43:76,], force = TRUE)
 RGSet <- combineArrays(RGSetTraining, RGSetTest)
 
 #After reading in data to RGSet, check proportion of failed probes, identify samples with >10% failure
